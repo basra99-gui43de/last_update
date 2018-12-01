@@ -1,0 +1,112 @@
+page-resturant-search {
+img{
+    border-radius: 20%;
+    border: 1px solid;
+    border-color: rgba(220, 126, 63, 0.29);
+    width: 35%;
+    -webkit-box-shadow: 1px 1px 1px 1px #ff000008;
+    box-shadow: 1px 1px 1px 1px #ff76001f;
+
+}
+
+@import url('../../theme/variables.scss');
+
+$danger-color: #ff9387;
+$dark-gray: #febf94 ;
+//(45deg, #ff9387 0%,#fcb07e 53%,#febf94 100%);
+
+.custom-card {
+  border: 0.4002222px solid $dark-gray;
+  box-shadow: #febe9421 1px 1px 4px 0px;
+  .custom-card-label {
+    border-color: transparent $dark-gray transparent transparent;
+    border-color: $dark-gray;
+  }
+
+
+  &.danger {
+    border-color: $dark-gray;
+
+    .custom-card-label {
+      border-color: transparent $danger-color transparent transparent;
+      border-color: rgba(255,255,255,0) $danger-color rgba(255,255,255,0) rgba(255,255,255,0);
+    }
+  }
+  .custom-card-label {
+    border-style: solid;
+    border-width: 0 8.5rem 3.3rem 0;
+    float: right;
+    height: 0px;
+    width: 0px;
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+
+  .custom-card-label-text {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    right: -7.9rem;
+    top: 10px;
+    white-space: nowrap;
+    -webkit-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+
+.img1{
+    position: relative;
+   left: -62%;
+   top: -10px;
+
+}
+.img2{
+    float: left;
+    height: 0px;
+    padding-bottom: 30px;
+
+}
+
+@media only screen and (max-width: 320px) {
+    .img1{
+        position: relative;
+       right: 65%;
+       top: -5px;
+    }
+}
+
+// @media only screen and (min-width: 768px) {
+//     .img1{
+//         position: relative;
+//         right: 53rem;
+//         top: -18px;
+//         width: 60%;
+//     }
+// }
+
+.card-content-ios {
+    padding: 12px 15px 10px;
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+.pos1{
+    position: relative;
+    top: -20px;
+}
+
+.spinner-container {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+.changeColor{
+    color:#35a420;
+    font-size: 2.2rem;
+    padding-left: 6px;
+}
+
+}

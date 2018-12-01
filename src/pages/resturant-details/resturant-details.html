@@ -1,0 +1,68 @@
+<ion-header style=" position: relative;">
+     <div class="topImage">
+    <img src="../../assets/./imgs/./frontrest.jpg" alt="">
+  </div>
+  <div class="iconImage">
+      <img src="../../assets/./imgs/./favorite-icon-23.jpg" alt="">
+  </div>
+</ion-header>
+<ion-icon name="arrow-back"></ion-icon>
+
+<ion-content padding class="backImage">
+    <!-- <p> key : {{id}}</p>
+    <p> name : {{data.name}}</p>
+    <p> location : {{data.location}}</p>
+    <p> phone : {{data.phone}}</p> -->
+
+
+
+    <div *ngFor="let item of items  ">
+      <div *ngIf="item.rest_key === id">
+      <ion-title class="paddingTop titleColor">{{item.name}}</ion-title>
+      <p class="editLocation">  {{item.location}}</p>
+      <p class="editTime"><ion-icon name="clock-outline"></ion-icon> <span class="changeColor">مفتوح الان </span>.  م  11:30 - ص 10 </p>
+      <hr>
+
+
+      <ion-card >
+          <ion-card-content >
+            <ion-item >
+              <ion-icon class="shapeIcone changeColor" name="call-outline" item-start></ion-icon>
+              <h2>{{item.phone}}</h2>
+              <ion-icon class="backIcon fllowIcon"   name="arrow-round-back" item-end></ion-icon>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card >
+            <ion-card-content >
+              <ion-item >
+                <ion-icon class="shapeIcone mapIconColor" name="map-outline" item-start></ion-icon>
+                <h2>عنواننا علي الخريطة</h2>
+                <ion-icon class="backIcon fllowIcon"   name="arrow-round-back" item-end></ion-icon>
+              </ion-item>
+            </ion-card-content>
+          </ion-card>
+
+          <ion-card  (click)="goToMenu(item.rest_key)">
+              <ion-card-content >
+                <ion-item >
+                  <ion-icon class="shapeIcone" style="color:#ff9387" name="list-box-outline" item-start></ion-icon>
+                  <h2>قائمة الطعام</h2>
+                  <ion-icon class="backIcon fllowIcon"   name="arrow-round-back" item-end></ion-icon>
+                </ion-item>
+              </ion-card-content>
+            </ion-card>
+            <ion-card  (click)="tableOrder(item.rest_key)">
+              <ion-card-content >
+                <ion-item >
+                  <ion-icon class="shapeIcone" style="color:#ff9387" name="list-box-outline" item-start></ion-icon>
+                  <h2>حجز طاولة </h2>
+                  <ion-icon class="backIcon fllowIcon"   name="arrow-round-back" item-end></ion-icon>
+                </ion-item>
+              </ion-card-content>
+            </ion-card>
+
+    </div>
+    </div>
+</ion-content>

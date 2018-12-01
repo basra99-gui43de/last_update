@@ -1,0 +1,56 @@
+page-resturant-details {
+    .topImage img {
+    max-width: 100%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    height: 312px;
+    box-shadow: #ff938754 0px 0px 0px 1px;
+    // position: relative;
+    // width: 400px;
+    // height: 312px;
+}
+
+.iconImage img{
+    position: absolute;
+    top: 90%;
+    right: 41%;
+    width: 15%;
+}
+
+.paddingTop{
+    padding-top: 10px;
+}
+.editTime{
+    text-align: center;
+    margin-top: 0px;
+}
+.changeColor{
+    color: #35a420;
+
+}
+.editLocation{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.content-ios hr {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.card-content-ios {
+   padding: 0;
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+.mapIconColor{
+    color: red;
+}
+.fllowIcon{
+    color:#febf94;
+}
+
+.toolbar-title {
+    color: #ff9387;
+}
+}

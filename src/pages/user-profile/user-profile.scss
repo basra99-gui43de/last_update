@@ -1,0 +1,33 @@
+page-user-profile {
+    img{
+   border-radius: 50%;
+   border: 1px solid;
+   border-color: rgba(117, 144, 235, 0);
+   width: 35%;
+   box-shadow: 1px 1px 1px 1px #ff000008;
+   } 
+
+   .bg-image {
+       height: 25%;
+       text-align: center;
+       margin-bottom:10%
+   }
+
+
+.backIcon{
+   color: #ff9882;
+   margin: 2px !important;
+}
+.shapeIcone{
+    color: #ff9882;
+    font-size: x-large;
+    margin: 0px !important;
+}
+ion-card-content {
+    display: block;
+    padding: 13px 11px 3px!important;
+    font-size: 1.4rem!important;
+    line-height: 1.4!important;
+}
+}
+

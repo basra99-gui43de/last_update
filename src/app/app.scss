@@ -1,0 +1,97 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+// .tabs .tabbar {
+//     overflow: hidden;
+//     margin: 2em auto;
+//     position: relative;
+//     width: 105px;
+//     padding: 1em 0;
+//   }
+@font-face {
+    font-family: 'Cairo';
+  font-weight: 300;
+  src:  url('../assets/fonts/SLXGc1nY6HkvalIkTpumxdt0UX8.woff2') format('woff2');
+}
+*{
+    font-family: 'Cairo'; 
+}
+ion-fab[bottom] {
+    bottom: 25px;
+}
+  .pad-r{
+      padding-right: 20px !important;
+  }
+  .pad-l{
+      padding-left: 20px !important;
+  }
+
+  .tab-button[aria-selected=true] .tab-button-icon {
+    color: #ff9387 !important;
+}
+ .tab-button:hover:not(.disable-hover),  .tab-button[aria-selected=true] {
+    color: #ff9387 !important;
+}
+ion-content{
+    direction: rtl;
+    background-color: #fafafa !important;
+}
+ion-slides{
+    direction: ltr;
+}
+.grad{
+    color: #fff;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9387+0,fcb07e+53,febf94+100 */
+background: #ff9387; /* Old browsers */
+background: -moz-linear-gradient(45deg, #ff9387 0%, #fcb07e 53%, #febf94 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #ff9387 0%,#fcb07e 53%,#febf94 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #ff9387 0%,#fcb07e 53%,#febf94 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9387', endColorstr='#febf94',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.toolbar-background {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9387+0,fcb07e+53,febf94+100 */
+background: #ff9387; /* Old browsers */
+background: -moz-linear-gradient(45deg, #ff9387 0%, #fcb07e 53%, #febf94 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #ff9387 0%,#fcb07e 53%,#febf94 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #ff9387 0%,#fcb07e 53%,#febf94 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9387', endColorstr='#febf94',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+.toolbar-title {
+    color: #e6e6e6;
+}
+.code-img{
+    position: absolute;
+    z-index: 99;
+    width: 52%;
+    margin: 25%;
+}
+.bar-button{
+    color: #ffffff !important;
+    background-color: transparent;
+}
+.grad-out{
+border: solid 2px #ff9387;
+color: #ff9387;
+}
+.toast-message {
+    font-size: 1.4rem;
+    color: #e78277 !important;
+    padding: 1.5rem;
+    background-color: #fafafa;
+    direction: rtl;
+}

@@ -1,0 +1,52 @@
+
+  <ion-header >
+      <ion-toolbar >
+        <ion-title>
+            سلة الطلبات
+          </ion-title>
+      </ion-toolbar>
+  </ion-header>
+  
+  <ion-content style="margin-top: 5%;">
+      <ion-item class="grad" *ngIf="totalePrice != 0 && totalePrice != null">
+          <ion-icon name="restaurant" item-end></ion-icon>
+       قائمة الطلبات
+        </ion-item>
+  
+    <ion-card *ngFor="let item of cr ; let i = index">
+        <ion-card-content>
+        <ion-row>
+            <ion-col col-4>
+                {{item.name}}
+               <p>{{item.price}}  دينار</p>
+            </ion-col>
+            <ion-col col-4>
+     
+            </ion-col>
+            <ion-col col-4>         
+             <div class="btn-div" (click)="delete(i,item.price)">
+                <img  class="btn-img"   src="./assets/imgs/del.png"  />
+             </div>      
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      
+      </ion-card>
+  <div padding>
+        <ion-item class="grad-out" *ngIf="totalePrice != 0 && totalePrice != null">
+        <ion-icon name="cash" item-end></ion-icon>
+        السعر النهائي {{totalePrice}} دينار
+      </ion-item>
+  </div>
+
+  
+    <ion-item class="grad no-order" *ngIf="totalePrice == 0 || totalePrice == null">
+        <ion-icon name="restaurant" item-end></ion-icon>
+      لا توجد طلبات
+      </ion-item>
+<ion-item class="noborderBottom noborderTop noBackColor">
+    <button  *ngIf="totalePrice != 0 && totalePrice != null" ion-button round class="grad btn" full (click)="order()">طلب نهائي</button>
+</ion-item>
+<ion-item class="noborderBottom noborderTop noBackColor"></ion-item>
+  </ion-content>
+  

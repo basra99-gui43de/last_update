@@ -1,0 +1,46 @@
+<ion-header >
+    <ion-toolbar >
+      <ion-title>
+        المعلومات الشخصية
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-content padding>
+      <ion-item class="noBackColor"> 
+          <ion-label stacked>الاسم</ion-label>
+          <ion-input type="text"  name="name" [(ngModel)]="myInfo.name"></ion-input>
+        </ion-item>
+      
+        <ion-item class="noBackColor"> 
+            <ion-label stacked>العمر</ion-label>
+          <ion-input type="text" name="age" [(ngModel)]="myInfo.age"></ion-input>
+        </ion-item>
+  
+        <ion-item class="noBackColor"> 
+            <ion-label stacked>دقم الهاتف</ion-label>
+            <ion-input type="text" name="phone" [(ngModel)]="myInfo.phone"></ion-input>
+          </ion-item>
+  
+  
+          <ion-item class="noBackColor"> 
+              <ion-label stacked>المدينة</ion-label>
+              <ion-input type="text" name="city" [(ngModel)]="myInfo.city"></ion-input>
+            </ion-item>
+  
+            <ion-item class="noBackColor"> 
+                <ion-label stacked>العنوان الكامل</ion-label>
+                <ion-input type="text" name="address" [(ngModel)]="myInfo.address"></ion-input>
+              </ion-item>
+  
+              <!-- <ion-item>
+                  <input type="file" (change)="updateUpload($event)" accept=".png,.jpg" />
+                </ion-item> -->
+                <div padding>
+                    <button ion-button  block  class="loginBnt grad" (click)="onEdit()">تعديل</button>
+                    <ion-row></ion-row>
+                  </div>
+     
+  </ion-content>
+  
